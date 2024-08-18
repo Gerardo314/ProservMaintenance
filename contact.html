@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Sunflower:wght@300;500;700&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="contact.js"></script>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<div class = "wrapper">
+        <header> 
+            <nav>
+                <a class ="logo" href="index.html">
+                    <img src = "logo.svg" alt = "Proserv Maintenance Logo" >
+                </a>
+                <ul class ="navigation" id ="nav__links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="ContactUs.html">Contact Us</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar active"></span>
+                    <span class="bar active"></span>
+                    <span class="bar active"></span>
+                </div> 
+            </nav>
+        </header>
+
+    <body>
+        <div class="contact-container">
+            
+            <form action="https://api.web3forms.com/submit" method ="POST">
+                <input type="hidden" name="access_key" value="ae247a02-bc37-48b6-bff1-0812ff5b4bad">
+                <h1>Contact Us for a Cleaner Tomorrow!</h1>
+                <div class="inputs">
+                    <input type="text" name="name" placeholder="Your Name" class ="contact-input">
+                    <input type="email" name="email" placeholder="Your Email" class ="contact-input">
+                    <input type="number" name="number" placeholder="Your Phone Number" class ="contact-input">
+                    <textarea name="message" placeholder="How can we help you?" class ="contact-input"></textarea>
+                    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                    <button type="submit">Submit</button>
+                    <div class="contactus">
+                        <div class ="contactCard">
+                            
+                        <h2>Call or Email at: </h2>
+                            
+                        </div>
+                        <div class ="contactCard">
+                            <img src="/images/phone.png" alt = "phone icon">
+                            <div class="info">
+                                <a href="tel:+9726722982">(972)-672-2982</a>
+                            </div>
+                            
+                        </div>
+                        <div class ="contactCard">
+                            <img src="/images/email.png" alt = "Email icon">
+                            <a href="mailto:proservmaintenance@hotmail.com">proservmaintenance@hotmail.com</a>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <div class="image">
+                <img src = "images\livingroom.jpg" alt="">
+            </div>
+            
+        </div>
+        
+        
+    </body>
+</div>
+</html>

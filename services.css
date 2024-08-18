@@ -1,0 +1,352 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins","Merriweather";
+  
+    
+  }
+  html{
+    font-size: 62.5%;
+  }
+  .wrapper{
+    margin: 3em 1em 3em 0em;
+    padding: 0em;
+    max-width: 1200px;
+  }
+  
+  nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    z-index: 1000;
+    
+  }
+  .hamburger:hover{
+    cursor: pointer;
+  }
+  .navigation{
+    display: none;
+  }
+  .bar {
+    z-index: 1000;
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out;
+    background-color: #893535;
+  }
+  a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.8rem;
+  }
+  h2{
+    color:#7c3030
+  }
+  ul{
+    list-style-type: none;
+  }
+   #nav__links{
+    
+    gap: 2em;
+   }
+  
+  #nav__links.active{
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    position: fixed ;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 20vh;
+    background-color: #FFFFFF;
+    
+    justify-content: start;
+    box-shadow: 0px 0px 5px 1px #89353581;
+    
+    li{
+      z-index: 1000;
+      padding: 1em 0em 1em 0em;
+      flex-direction: row;
+      text-align: center;
+    }
+    li:nth-child(1){
+      margin-top: 6em;
+    }
+    li:hover{
+      background-color:#8b4545;
+    }
+  }
+  .hamburger.active .bar:nth-child(2) {
+    z-index: 1000;
+    opacity: 0;
+  }
+  
+  .hamburger.active .bar:nth-child(1) {
+    z-index: 1005s;
+    transform: translateY(8px) rotate(45deg);
+  }
+  
+  .hamburger.active .bar:nth-child(3) {
+
+    z-index: 1000;
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  .header-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 30em; /* Ensure the wrapper maintains the height */
+    h1 {
+      position: relative; /* Ensure the h1 is above the background image */
+      z-index: 2;
+      font-size: 5rem;
+      margin: 0.5;
+      color: white;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.987); /* White shadow for a border effect */
+  }
+  h2 {
+    position: relative;
+    z-index: 3; /* Ensure the h2 is above the overlay */
+    font-size: 2rem; /* Adjust size as needed */
+    font-weight: lighter;
+    margin: 0;
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.9); /* Lighter shadow for h2 */
+  }
+}
+
+p{
+  font-family:"Merriweather";
+  font-weight: lighter;
+}
+.header-pic {
+    position: absolute; /* Make the background image fill the entire wrapper */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("/images/Granite-Countertops.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    z-index: 1; /* Keep the background behind the h1 */
+    opacity: 0.99;
+}
+.header-pic::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+ 
+  z-index: 2;
+}
+
+
+.hook{
+  color: black;
+}
+h2{
+  margin-top: 1em;
+  font-size: 3rem;
+  font-weight: bold;
+  
+}
+.services-paragraph{
+  margin: 0.5em auto;
+}
+
+.service{
+  display: flex;
+}
+
+.service{
+  margin:5em auto;
+  h2{
+    margin-top: 0.5rem;
+    margin-bottom: 0.5em;
+    font-size: 2rem;
+  }
+}
+
+
+.service-descrip{
+  margin: 5em auto;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.contact-container{
+  justify-content: flex-start;
+  background-color: #f3f2f1;
+  border-radius: 2em;
+  margin:1em;
+  display: flex;
+  padding: 2em;
+  width: fit-content;
+}
+
+.inputs{
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  margin-top: 2em;
+}
+input,textarea{
+  border-width: 0em;
+  border-radius: 0.5em;
+  font-family: "Merriweather";
+  font-weight: lighter;
+  height: 2em;
+}
+textarea{
+  width:100% ;
+  min-height: 5em;;
+}
+
+button{
+  background-color: #7c3030;
+  color: #FFFFFF;
+  width: fit-content;
+  padding: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-style: bold;
+  font-size: 1.6rem;
+}
+
+
+  footer{
+  
+    background-color: #201f1e;
+    
+    padding-top: 2em;
+    color:white;
+    font-size: 0.5rem;
+    a,address,p{
+      color:white;
+    }
+    img{
+      max-width: 40em;
+    }
+    
+    .icons{
+      max-width: 5em;
+      height: auto;
+    }
+    p{
+      position: relative;
+      margin-top: 2em;
+    }
+  
+  
+  }
+  
+  .row-info{
+   
+    display: flex;
+    flex-direction: column;
+    gap:2em;
+    padding: 5em auto;
+  }
+  
+  .contactCard{
+    display: flex;
+    justify-content: left;
+    gap: 1em; 
+  }
+  .info,a,address,p
+    {
+        font-size: 2.2rem;
+        text-decoration: none;
+        font-style: normal;
+    }
+    
+
+
+
+  @media(min-width:750px)
+  {
+   header{
+    margin-bottom: 5em;
+   }
+   nav{
+    a{
+      position: relative;
+      font-size: 2.2rem;
+    }
+    a:hover{
+      color: #7c3030;
+    }
+    a:hover::after {
+      content: "";
+      position: absolute;
+      left: 25%;
+      right: 25%;
+      bottom: 0;
+      border: 1px solid black;
+    }
+  }
+    .service:nth-child(1)
+    {
+      margin: 0em;
+    }
+    .wrapper{
+      max-width: 1200px;
+      margin: 3em auto;
+    }
+    .hamburger{
+      display: none;
+    }
+    .navigation{
+      display: flex;
+      flex-direction: row;
+    }
+    .contact-container{
+      flex-direction: row;
+      min-width: 35%;
+      max-height: 50em;
+      padding: 4em 4em 4em 2em;
+      gap:15em;
+      input,textarea{
+        font-size: 1.8rem;
+      }
+     
+    }
+    .service-descrip{
+      display: flex;
+      flex-direction: row;
+      gap: 10em;
+    }
+    
+    .image{
+      display: block;
+    }
+    form{
+      width:100%;
+    }
+    .inputs{
+      margin-top: 3em;
+      gap:3em;
+      margin-bottom: 3em;
+    }
+    button{
+      margin-bottom: 10em;
+    }
+    .row-info{
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+      }
+  }
